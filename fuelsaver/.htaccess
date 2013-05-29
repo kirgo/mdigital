@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/services 
+RewriteCond %{REQUEST_URI} !/flash 
+RewriteCond %{REQUEST_URI} !/mobile/images
+RewriteCond %{REQUEST_URI} !/mobile/css 
+RewriteCond %{REQUEST_URI} !/mobile/js 
+RewriteRule ^(.*)$ /fuelsaver/mobile/index.php?args=$1 [L]

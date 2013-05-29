@@ -1,0 +1,335 @@
+@CHARSET "UTF-8";
+/**** RESET ****/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/*** MAKE HTML5 ELEMNTS CODE ***/
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
+a{
+	color:#7e7e7e;
+}
+
+
+body{
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+
+/* FONTS */
+
+@font-face {
+	font-family: 'MorrisonsKlevit';
+	src: url('fonts/MorrisonsKievit-Black.otf'); 
+} 
+
+h1, h2, h3, p{
+	font-family: MorrisonsKlevit, sans-serif;
+	font-weight:normal;
+}
+
+h1{
+	font-size:30px;
+}
+
+h1, h2, h3{
+	color:#8dc63f;
+	margin:3% 0px;
+}
+
+p, .terms ol li{
+	font-family: 'Open Sans', sans-serif;
+	margin:3% 0px;
+	color:#7e7e7e;
+	font-size:18px;
+	font-weight:lighter;
+	line-height:30px;
+}
+
+/* TERMS */
+.terms ol li{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;	
+}
+
+/* NAV */
+nav{
+	width:100%;
+	overflow:auto;
+}
+
+.navitem{
+	width:25%;
+	float:left;
+}
+
+/* CONTENT */
+.content{
+	width:92%;
+	padding:4%;
+}
+
+.full_width_btn{
+	width:80%;
+	text-align:center;
+	margin:0px auto;
+	padding-top:5%;
+}
+
+.box_bg{
+	text-align:center;
+	background-color: rgb(244,244,244);
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background-image: -o-linear-gradient(-90deg , rgb(244,244,244) 0%, rgb(232,232,232) 100%);
+	background-image: -moz-linear-gradient(-90deg , rgb(244,244,244) 0%, rgb(232,232,232) 100%);
+	background-image: -webkit-linear-gradient(-90deg , rgb(244,244,244) 0%, rgb(232,232,232) 100%);
+	background-image: -ms-linear-gradient(-90deg , rgb(244,244,244) 0%, rgb(232,232,232) 100%);
+	background-image: linear-gradient(-90deg , rgb(244,244,244) 0%, rgb(232,232,232) 100%);
+	padding:10%;
+	-moz-box-shadow: 1px 1px 5px #7e7e7e;
+	-webkit-box-shadow: 1px 1px 5px #7e7e7e;
+	box-shadow: 1px 1px 5px #7e7e7e;
+	margin-top:10%;
+	margin-bottom:10%;
+}
+
+/* FUEL CALC*/
+#step3{
+	text-align:center;
+}
+
+#step3 h2{
+	font-size:150%;
+}
+
+.saver_value h1, .saver_value h2{
+	color:#006554;
+	font-family: MorrisonsKlevit;
+}
+
+.saver_value h2{
+	font-size:150% !important;
+}
+
+.saver_value h1{
+	font-size:450%;
+}
+
+/* FIND NEAREST */
+.map img{
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+/* SLIDERS */
+
+#fuel_calc{
+	overflow:auto;
+}
+
+#fuel_calc .touch_enabled h2{
+	font-size:25px;
+	text-align:left;
+	color:#006554;
+}
+
+#fuel_calc #step2 .line{
+	margin:0 auto;
+}
+
+.slider{
+	width:100%;
+	margin:0px;
+	position:relative;
+	margin:0px auto;
+	height:100%;
+}
+
+.slider_dot{
+	position:absolute;
+	z-index:10;
+}
+
+.slider_full{
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+	float:left;
+	width:75%;
+}
+
+.slider_empty{
+	float:left;
+	width:75%;
+}
+
+.touch_enabled .saving_number{
+	float:left;
+	width:20%;
+	font-size:40px;
+	padding-left:5%;
+	color:#006554;
+}
+
+/* SLIDERS TOUCH DISABLED */
+.touch_disabled{
+	display:block;
+}
+
+.touch_enabled{
+	display: none;
+}
+
+#fuel_calc .touch_disabled h2{
+	font-size:25px;
+	text-align:center !important;
+	color:#006554;
+}
+
+.plus_minus_bar{
+	width:100%;
+	margin:0 auto;
+	overflow:auto;
+	text-align:center;
+}
+
+.plus_minus_bar .saving_number{
+	text-align:center !important;
+	width:30%;
+	float:left;
+	padding-top:4%;
+}
+
+.minus{
+	width:35%;
+	float:left;
+}
+
+.plus{
+	width:35%;
+	float:left;
+}
+
+.minus img, .plus img{
+	width:50%;
+}
+
+
+/* FORMS */
+.form{
+	overflow:auto;
+}
+
+input{
+	background:none;
+	border: none;
+}
+
+.text_input{
+	background-image:url('/fuelsaver/mobile/images/form_field_bg.png');
+	width:90%;
+	margin:0 auto 5% auto;
+	background-size: 100% 100%;
+}
+
+.text_input input{
+	font-size:30px;
+	padding:5% 0;
+	width:100%;
+	text-align:center;
+	color:#006554;
+	font-family: MorrisonsKlevit;
+}
+
+input::-webkit-input-placeholder {
+	color:#006554;
+}
+
+#hear_from_morrisons, #terms_checkbox{
+	width:80%;
+	float:left;
+	margin:2% 0 0 9%;
+}
+
+#hear_from_morrisons img, #terms_checkbox img{
+	padding-right:5%;
+	float:left;
+}
+
+#hear_from_morrisons p, #terms_checkbox p{
+	text-align:left;
+	margin-top:2%;
+	font-size:80%;
+}
+
+.no_js_box{
+	background: white;
+	font-size: 18px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.js_enabled{
+	display: none;
+}
+
+/* SHARE PAGE */
+#share .buttons{
+	padding:5% 0;
+}
+
+.find_social_box{
+	width:80%;
+	margin:5% auto;
+	overflow:auto;
+}
+
+.find_social_box img{
+	width:10%;
+	float:left;
+	padding-top:2%;
+}
+
+.find_social_box p{
+	padding-left:15%;
+}
+
+/* TERMS */
+.terms p{
+	font-size:85%;
+}
+
+.terms .button{
+	text-align:center;
+}
+
+/* FOOTER */
+footer{
+	width:100%;
+	height:75px;
+	background-color:#006554;
+}
