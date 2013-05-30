@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <categories>  
+    <category>
+      <name>Fashion*</name>
+      <max>30</max>
+    </category>
+    <category>
+      <name>Beauty*</name>
+      <max>100</max>
+    </category>
+    <category>
+      <name>Entertainment*</name>
+      <max>42</max>
+    </category>
+    <category>
+      <name>Home & Leisure*</name>
+      <max>55</max>
+    </category>
+    <category>
+      <name>Dining*</name>
+      <max>20</max>
+    </category>
+  </categories>
+  <variables>
+      <tank_size>200</tank_size>
+      <saving>0.1</saving>
+  </variables>
+  <endpoints>
+      <endpoint>          
+          <name>getUUID</name>
+          <url>../data/uuid.xml</url>
+          <!--  <url>http://dev.csmobi.cc/fuelsaver/services/uuid</url> -->
+      </endpoint>
+      <endpoint>          
+          <name>storeSearch</name>
+          <url>../data/calculatorResults.xml</url>
+          <!--  <url>http://dev.csmobi.cc/fuelsaver/services/{uuid}/stores</url> -->
+      </endpoint>
+      <endpoint>          
+          <name>calculator</name>
+          <url>../data/calculatorResults.xml</url>
+          <!-- <url>http://dev.csmobi.cc/fuelsaver/services/{uuid}/calculate</url> -->
+      </endpoint>
+      <endpoint>          
+          <name>collect</name>
+          <url>http://dev.csmobi.cc/fuelsaver/services/{uuid}/collect</url>
+      </endpoint>
+      <endpoint>          
+          <name>sliderTracking</name>
+          <url>http://dev.csmobi.cc/fuelsaver/services/{uuid}/slider-track</url>
+      </endpoint>
+  </endpoints>
+</config>
